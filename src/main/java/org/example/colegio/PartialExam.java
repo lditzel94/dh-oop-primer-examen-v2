@@ -11,8 +11,8 @@ public class PartialExam extends Exam {
     }
 
     public boolean canRetry() {
-        if ( retries <= 3 && studyUnit <= 3 ) return true;
-        else if ( retries <= 2 && studyUnit > 3 ) return true;
+        if ( retries < 3 && studyUnit <= 3 ) return true;
+        else if ( retries < 2 && studyUnit > 3 ) return true;
         else return false;
     }
 
